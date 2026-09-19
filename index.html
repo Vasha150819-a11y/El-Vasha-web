@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>El Vasha</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #050505, #151515, #000000);
+      color: white;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 70px 20px 40px;
+    }
+
+    header h1 {
+      font-size: 55px;
+      letter-spacing: 5px;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      color: #aaa;
+      font-size: 18px;
+    }
+
+    .contenedor {
+      width: 90%;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .tarjeta {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 20px;
+      padding: 30px;
+      margin: 25px 0;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .tarjeta h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .tarjeta p {
+      color: #ccc;
+      line-height: 1.7;
+      font-size: 17px;
+    }
+
+    .boton {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 13px 25px;
+      border-radius: 30px;
+      background: white;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .boton:hover {
+      transform: scale(1.05);
+      background: #ddd;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: #777;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 40px;
+      }
+
+      .tarjeta {
+        padding: 22px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>EL VASHA</h1>
+    <p>Bienvenido a mi página web.</p>
+  </header>
+
+  <main class="contenedor">
+
+    <section class="tarjeta">
+      <h2>¿Quién soy?</h2>
+      <p>
+        Bienvenido a mi espacio personal.
+        Aquí podrás conocer un poco más sobre mí,
+        mis gustos, mis proyectos y las cosas que me interesan.
+      </p>
+    </section>
+
+    <section class="tarjeta">
+      <h2>Mis proyectos</h2>
+      <p>
+        Este sitio es uno de mis proyectos personales.
+        Poco a poco iré agregando nuevas cosas,
+        diseños y contenido.
+      </p>
+
+      <a href="#" class="boton">Ver proyectos</a>
+    </section>
+
+    <section class="tarjeta">
+      <h2>Contacto</h2>
+      <p>
+        Gracias por visitar mi página.
+        Próximamente podrás encontrar aquí
+        mis redes sociales y diferentes formas de contactarme.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    © 2026 El Vasha — Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>
