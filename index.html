@@ -3,144 +3,231 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <title>El Vasha</title>
-
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-
+    html {
+      scroll-behavior: smooth;
+    }
     body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #050505, #151515, #000000);
-      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #e4f6ff, #bfe7f7);
+      color: #173b52;
       min-height: 100vh;
     }
-
+    /* Encabezado */
     header {
       text-align: center;
-      padding: 70px 20px 40px;
+      padding: 75px 20px 55px;
     }
-
     header h1 {
-      font-size: 55px;
-      letter-spacing: 5px;
+      font-size: clamp(42px, 12vw, 70px);
+      letter-spacing: 6px;
+      color: #123b55;
       margin-bottom: 15px;
     }
-
     header p {
-      color: #aaa;
-      font-size: 18px;
+      font-size: 19px;
+      color: #416579;
     }
-
+    /* Contenedor */
     .contenedor {
       width: 90%;
       max-width: 900px;
       margin: auto;
+      padding-bottom: 40px;
     }
-
+    /* Tarjetas */
     .tarjeta {
-      background: rgba(255, 255, 255, 0.06);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      border-radius: 20px;
-      padding: 30px;
+      background: rgba(255, 255, 255, 0.68);
+      border: 1px solid rgba(255, 255, 255, 0.9);
+      border-radius: 24px;
+      padding: 32px;
       margin: 25px 0;
-      text-align: center;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 12px 35px rgba(50, 100, 130, 0.15);
+      backdrop-filter: blur(8px);
     }
-
     .tarjeta h2 {
-      font-size: 28px;
-      margin-bottom: 15px;
+      font-size: 30px;
+      color: #123b55;
+      margin-bottom: 20px;
+      text-align: center;
     }
-
     .tarjeta p {
-      color: #ccc;
-      line-height: 1.7;
+      color: #36586b;
+      line-height: 1.8;
       font-size: 17px;
+      text-align: left;
     }
-
+    /* Frase */
+    .frase {
+      margin-top: 25px;
+      padding: 22px;
+      border-left: 4px solid #4aa8d1;
+      background: rgba(220, 244, 255, 0.65);
+      border-radius: 10px;
+      font-size: 18px;
+      font-style: italic;
+      color: #214b63;
+      line-height: 1.6;
+    }
+    .firma {
+      text-align: right;
+      margin-top: 12px;
+      font-size: 15px;
+      color: #557487;
+      font-style: normal;
+    }
+    /* Sección de proyectos */
+    .proyecto {
+      background: rgba(255, 255, 255, 0.5);
+      padding: 20px;
+      border-radius: 16px;
+      margin-top: 15px;
+    }
+    .proyecto h3 {
+      color: #174c69;
+      margin-bottom: 8px;
+    }
+    /* Botón */
     .boton {
-      display: inline-block;
-      margin-top: 20px;
+      display: block;
+      width: fit-content;
+      margin: 25px auto 0;
       padding: 13px 25px;
       border-radius: 30px;
-      background: white;
-      color: black;
+      background: #2f8fba;
+      color: white;
       text-decoration: none;
       font-weight: bold;
       transition: 0.3s;
     }
-
     .boton:hover {
-      transform: scale(1.05);
-      background: #ddd;
+      transform: translateY(-3px);
+      background: #24799e;
     }
-
+    /* Pie de página */
     footer {
       text-align: center;
-      padding: 40px 20px;
-      color: #777;
+      padding: 35px 20px 45px;
+      color: #557487;
+      font-size: 14px;
     }
-
+    /* Adaptación para teléfonos */
     @media (max-width: 600px) {
-      header h1 {
-        font-size: 40px;
+      header {
+        padding: 55px 18px 35px;
       }
-
+      header h1 {
+        letter-spacing: 4px;
+      }
+      header p {
+        font-size: 17px;
+      }
+      .contenedor {
+        width: 92%;
+      }
       .tarjeta {
-        padding: 22px;
+        padding: 24px 20px;
+        border-radius: 20px;
+      }
+      .tarjeta h2 {
+        font-size: 25px;
+      }
+      .tarjeta p {
+        font-size: 16px;
+        line-height: 1.75;
+      }
+      .frase {
+        font-size: 17px;
+        padding: 18px;
       }
     }
   </style>
 </head>
-
 <body>
-
+  <!-- ENCABEZADO -->
   <header>
     <h1>EL VASHA</h1>
-    <p>Bienvenido a mi página web.</p>
+    <p>Un nombre. Una identidad. Una huella.</p>
   </header>
-
   <main class="contenedor">
-
+    <!-- QUIÉN SOY -->
     <section class="tarjeta">
-      <h2>¿Quién soy?</h2>
+      <h2>¿Quién es El Vasha?</h2>
       <p>
-        Bienvenido a mi espacio personal.
-        Aquí podrás conocer un poco más sobre mí,
-        mis gustos, mis proyectos y las cosas que me interesan.
+        <strong>El Vasha</strong> es el nombre con el que se da a conocer
+        <strong>Joshua Emmanuel Ramos Torres</strong>, un joven que decidió
+        crear su propio apodo con la intención de construir una identidad
+        que algún día pueda ser reconocida por ese nombre.
       </p>
+      <br>
+      <p>
+        Para él, <strong>El Vasha significa no necesitar que nadie te dé
+        un nombre; significa construirlo tú mismo.</strong>
+      </p>
+      <br>
+      <p>
+        Este apodo nació de una idea sencilla: el respeto no se pide,
+        se gana. También aprendió que, al final, no importa tanto de
+        dónde vienes, sino la huella que dejas.
+      </p>
+      <br>
+      <p>
+        Se caracteriza por su personalidad, su determinación y su manera
+        de seguir su propio camino sin necesidad de copiar a los demás.
+        También procura escuchar a las personas que se acercan a él para
+        contarle sus problemas o pedirle algún consejo, sin esperar recibir
+        nada a cambio.
+      </p>
+      <br>
+      <p>
+        Para El Vasha, lo que importa es que esa persona pueda sentirse
+        escuchada, que pueda mejorar y continuar trabajando por aquello
+        que quiere conseguir.
+      </p>
+      <div class="frase">
+        “Vasha no es un nombre que heredé; es un nombre que voy a hacer
+        que recuerden.”
+        <div class="firma">
+          Att: Joshua_r.v
+        </div>
+      </div>
     </section>
-
-    <section class="tarjeta">
+    <!-- MIS PROYECTOS -->
+    <section class="tarjeta" id="proyectos">
       <h2>Mis proyectos</h2>
       <p>
-        Este sitio es uno de mis proyectos personales.
-        Poco a poco iré agregando nuevas cosas,
-        diseños y contenido.
+        Este sitio es uno de mis proyectos personales. Poco a poco iré
+        agregando nuevas cosas, diseños y contenido.
       </p>
-
-      <a href="#" class="boton">Ver proyectos</a>
+      <div class="proyecto">
+        <h3>🌐 El Vasha Web</h3>
+        <p>
+          Mi espacio personal para compartir quién soy, mis ideas,
+          proyectos y aquello que quiero construir.
+        </p>
+      </div>
+      <a href="#contacto" class="boton">
+        Ver más
+      </a>
     </section>
-
-    <section class="tarjeta">
+    <!-- CONTACTO -->
+    <section class="tarjeta" id="contacto">
       <h2>Contacto</h2>
       <p>
-        Gracias por visitar mi página.
-        Próximamente podrás encontrar aquí
+        Gracias por visitar mi página. Próximamente podrás encontrar aquí
         mis redes sociales y diferentes formas de contactarme.
       </p>
     </section>
-
   </main>
-
+  <!-- PIE DE PÁGINA -->
   <footer>
     © 2026 El Vasha — Todos los derechos reservados.
   </footer>
-
 </body>
 </html>
